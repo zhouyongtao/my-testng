@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd">
+<suite name="Suite" parallel="none">
+	<!--enabled="true"让测试生效，也可根据情况关闭某些测试 -->
+	<test name="Test" enabled="true">
+		<!--指定参数 -->
+		<parameter name="Name" value="Irving" />
+		<parameter name="Sex" value="Man" />
+		<!--指定测试包 -->
+		<packages>
+			<package name="com.homeinns.web.testng.*" />
+		</packages>
+		<!--指定测试类 -->
+		<classes>
+			<class name="com.homeinns.web.testng.AppTest" />
+			<class name="com.homeinns.web.testng.NgTest" />
+		</classes>
+	</test> <!-- Test -->
+</suite> <!-- Suite -->
